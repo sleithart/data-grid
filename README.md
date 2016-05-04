@@ -2,7 +2,7 @@
 
 A work-in-progress CSS grid layout that uses data-attributes instead of classes for columns.
 
-[See an example here.](https://rawgit.com/sleithart/data-grid/master/index.html)
+[See an example here.](https://cdn.rawgit.com/sleithart/data-grid/master/index.html)
 
 
 # How it works

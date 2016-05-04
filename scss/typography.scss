@@ -3,17 +3,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font: 100 16px/24px Futura, Helvetica, Arial, sans-serif;
+    font-family: Futura, Helvetica, Arial, sans-serif;
+    font-size: $fontSize;
+    line-height: $lineHeight;
     letter-spacing: .01em;
-}
 
-h1 {
-  font-size: 5.9vw;
-}
-h2 {
-  font-size: 3.0vh;
-}
-p,
-div {
-  font-size: 2vmin;
+    @media #{$largeMedia} {
+        font-size: 1.15 * $fontSize;
+    }
 }

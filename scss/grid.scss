@@ -1,0 +1,61 @@
+$cols : 12;
+
+[role="grid"] {
+    width: 100%;
+    max-width: $maxWidth;
+    margin: $margin auto;
+}
+[role="row"] {
+    display: block;
+    overflow: hidden;
+    margin-bottom: $margin;
+}
+[role="column"] {
+    float: left;
+    margin: 0 $margin;
+    padding: $margin 1.5*$margin;
+
+    @media #{$mobileMedia} {
+        &:not(:last-child) {
+            margin-bottom: $margin;
+        }
+    }
+
+    @for $i from 1 through $cols {
+        $width: percentage( $i / $cols ) - ($margin * 2);
+
+        &[data-width="#{$i}"] {
+            width: $width;
+
+            // Default to 100% width on mobile
+            @media #{$mobileMedia} {
+                width: 98%;
+            }
+        }
+        &[data-offset="#{$i}"] {
+            margin-left: $width + ($margin * 3);
+
+            // Default to no margin on mobile
+            @media #{$mobileMedia} {
+                margin: 0 $margin;
+
+                &:not(:last-child) {
+                    margin-bottom: $margin;
+                }
+            }
+        }
+    }
+    @media #{$mobileMedia} {
+        @for $i from 1 through $cols {
+            $width: percentage( $i / $cols ) - ($margin * 2);
+
+            &[data-mobile="#{$i}"] {
+                width: $width;
+            }
+            &[data-mobile-offset="#{$i}"] {
+                margin-left: $width + ($margin * 3);
+            }
+        }
+    }
+}
+

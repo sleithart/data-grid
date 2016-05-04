@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>data-grid</title>
+        <meta name="description" content="A CSS grid layout that uses data attributes instead of classes.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <main>
+            <div role="grid">
+                <div role="row">
+                    <div role="column" data-width="12">
+                        full-width column
+                    </div>
+                </div>
+                <div role="row">
+                    <div role="column" data-width="6">
+                        half-width column
+                    </div>
+                    <div role="column" data-width="6">
+                        half-width column
+                    </div>
+                </div>
+            </div>
+            <div role="grid">
+                <div role="row">
+                    <div role="column" data-width="6" data-offset="6">
+                        half-width column, half offset
+                    </div>
+                </div>
+                <div role="row">
+                    <div role="column" data-width="3" data-offset="3" data-mobile="8" data-mobile-offset="2">
+                        quarter-width column, quarter offset
+                    </div>
+                    <div role="column" data-width="3" data-mobile="12">
+                        quarter-width column
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

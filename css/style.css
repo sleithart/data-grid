@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: 100 16px/24px Futura, Helvetica, Arial, sans-serif;
+  letter-spacing: .01em; }
+
+h1 {
+  font-size: 5.9vw; }
+
+h2 {
+  font-size: 3.0vh; }
+
+p,
+div {
+  font-size: 2vmin; }
+
+main {
+  margin: 1%; }
+
+[role="column"] {
+  border: 1px solid rgba(0, 0, 0, 0.15); }
+
+[role="grid"] {
+  width: 100%;
+  max-width: 1400px;
+  margin: 1% auto; }
+
+[role="row"] {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 1%; }
+
+[role="column"] {
+  float: left;
+  margin: 0 1%;
+  padding: 1% 1.5%; }
+  @media screen and (max-width: 767px) {
+    [role="column"]:not(:last-child) {
+      margin-bottom: 1%; } }
+  [role="column"][data-width="1"] {
+    width: 6.3333333333%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-width="1"] {
+        width: 98%; } }
+  [role="column"][data-offset="1"] {
+    margin-left: 9.3333333333%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-offset="1"] {
+        margin: 0 1%; }
+        [role="column"][data-offset="1"]:not(:last-child) {
+          margin-bottom: 1%; } }
+  [role="column"][data-width="2"] {
+    width: 14.6666666667%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-width="2"] {
+        width: 98%; } }
+  [role="column"][data-offset="2"] {
+    margin-left: 17.6666666667%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-offset="2"] {
+        margin: 0 1%; }
+        [role="column"][data-offset="2"]:not(:last-child) {
+          margin-bottom: 1%; } }
+  [role="column"][data-width="3"] {
+    width: 23%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-width="3"] {
+        width: 98%; } }
+  [role="column"][data-offset="3"] {
+    margin-left: 26%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-offset="3"] {
+        margin: 0 1%; }
+        [role="column"][data-offset="3"]:not(:last-child) {
+          margin-bottom: 1%; } }
+  [role="column"][data-width="4"] {
+    width: 31.3333333333%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-width="4"] {
+        width: 98%; } }
+  [role="column"][data-offset="4"] {
+    margin-left: 34.3333333333%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-offset="4"] {
+        margin: 0 1%; }
+        [role="column"][data-offset="4"]:not(:last-child) {
+          margin-bottom: 1%; } }
+  [role="column"][data-width="5"] {
+    width: 39.6666666667%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-width="5"] {
+        width: 98%; } }
+  [role="column"][data-offset="5"] {
+    margin-left: 42.6666666667%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-offset="5"] {
+        margin: 0 1%; }
+        [role="column"][data-offset="5"]:not(:last-child) {
+          margin-bottom: 1%; } }
+  [role="column"][data-width="6"] {
+    width: 48%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-width="6"] {
+        width: 98%; } }
+  [role="column"][data-offset="6"] {
+    margin-left: 51%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-offset="6"] {
+        margin: 0 1%; }
+        [role="column"][data-offset="6"]:not(:last-child) {
+          margin-bottom: 1%; } }
+  [role="column"][data-width="7"] {
+    width: 56.3333333333%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-width="7"] {
+        width: 98%; } }
+  [role="column"][data-offset="7"] {
+    margin-left: 59.3333333333%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-offset="7"] {
+        margin: 0 1%; }
+        [role="column"][data-offset="7"]:not(:last-child) {
+          margin-bottom: 1%; } }
+  [role="column"][data-width="8"] {
+    width: 64.6666666667%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-width="8"] {
+        width: 98%; } }
+  [role="column"][data-offset="8"] {
+    margin-left: 67.6666666667%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-offset="8"] {
+        margin: 0 1%; }
+        [role="column"][data-offset="8"]:not(:last-child) {
+          margin-bottom: 1%; } }
+  [role="column"][data-width="9"] {
+    width: 73%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-width="9"] {
+        width: 98%; } }
+  [role="column"][data-offset="9"] {
+    margin-left: 76%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-offset="9"] {
+        margin: 0 1%; }
+        [role="column"][data-offset="9"]:not(:last-child) {
+          margin-bottom: 1%; } }
+  [role="column"][data-width="10"] {
+    width: 81.3333333333%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-width="10"] {
+        width: 98%; } }
+  [role="column"][data-offset="10"] {
+    margin-left: 84.3333333333%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-offset="10"] {
+        margin: 0 1%; }
+        [role="column"][data-offset="10"]:not(:last-child) {
+          margin-bottom: 1%; } }
+  [role="column"][data-width="11"] {
+    width: 89.6666666667%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-width="11"] {
+        width: 98%; } }
+  [role="column"][data-offset="11"] {
+    margin-left: 92.6666666667%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-offset="11"] {
+        margin: 0 1%; }
+        [role="column"][data-offset="11"]:not(:last-child) {
+          margin-bottom: 1%; } }
+  [role="column"][data-width="12"] {
+    width: 98%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-width="12"] {
+        width: 98%; } }
+  [role="column"][data-offset="12"] {
+    margin-left: 101%; }
+    @media screen and (max-width: 767px) {
+      [role="column"][data-offset="12"] {
+        margin: 0 1%; }
+        [role="column"][data-offset="12"]:not(:last-child) {
+          margin-bottom: 1%; } }
+  @media screen and (max-width: 767px) {
+    [role="column"][data-mobile="1"] {
+      width: 6.3333333333%; }
+    [role="column"][data-mobile-offset="1"] {
+      margin-left: 9.3333333333%; }
+    [role="column"][data-mobile="2"] {
+      width: 14.6666666667%; }
+    [role="column"][data-mobile-offset="2"] {
+      margin-left: 17.6666666667%; }
+    [role="column"][data-mobile="3"] {
+      width: 23%; }
+    [role="column"][data-mobile-offset="3"] {
+      margin-left: 26%; }
+    [role="column"][data-mobile="4"] {
+      width: 31.3333333333%; }
+    [role="column"][data-mobile-offset="4"] {
+      margin-left: 34.3333333333%; }
+    [role="column"][data-mobile="5"] {
+      width: 39.6666666667%; }
+    [role="column"][data-mobile-offset="5"] {
+      margin-left: 42.6666666667%; }
+    [role="column"][data-mobile="6"] {
+      width: 48%; }
+    [role="column"][data-mobile-offset="6"] {
+      margin-left: 51%; }
+    [role="column"][data-mobile="7"] {
+      width: 56.3333333333%; }
+    [role="column"][data-mobile-offset="7"] {
+      margin-left: 59.3333333333%; }
+    [role="column"][data-mobile="8"] {
+      width: 64.6666666667%; }
+    [role="column"][data-mobile-offset="8"] {
+      margin-left: 67.6666666667%; }
+    [role="column"][data-mobile="9"] {
+      width: 73%; }
+    [role="column"][data-mobile-offset="9"] {
+      margin-left: 76%; }
+    [role="column"][data-mobile="10"] {
+      width: 81.3333333333%; }
+    [role="column"][data-mobile-offset="10"] {
+      margin-left: 84.3333333333%; }
+    [role="column"][data-mobile="11"] {
+      width: 89.6666666667%; }
+    [role="column"][data-mobile-offset="11"] {
+      margin-left: 92.6666666667%; }
+    [role="column"][data-mobile="12"] {
+      width: 98%; }
+    [role="column"][data-mobile-offset="12"] {
+      margin-left: 101%; } }
